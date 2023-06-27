@@ -1,8 +1,62 @@
 # Fine-Tooning: Realistic Cartoonization of Myself
 
+<p align="center">
+    <img src = './assets/title.png'>
+</p>
+
+
+## Related Works
+
+* StyleGAN
+    * Generates a high-resolution image from the latent space
+* Toonify Method
+    * Mixes image domains using two StyleGANs
+    * One StyleGAN is trained from the original StyleGAN using a cartoon dataset by transfer learning
+
+
+## Improvements
+
+* Optimal Layer Swapping
+    * The original Toonify method shows an effective way for changing the style of an image through layer swapping, but facial structure is not preserved
+    * From layer swapping experiments, we confirmed low-resolution layers to be important for structure preservation
+    * The figure below shows qualitative comparison of different StyleGANs
+    
+    <br>
+    <p align="center">
+        <img src = './assets/fig1.png'>
+    </p>
+
+* Experiments in Different Data Domains
+    * Using our method, we discovered that the original dataset failed producing certain realistic features (ex. Hair color)
+    * A Naver Webtoon image set showed better results
+
+    <br>
+    <p align="center">
+        <img src = './assets/fig2.png'>
+    </p>
+
+* Fine-Tooning with Triplet loss
+    * Adjust our model parameter so our toonified face embedding can be close to real face embedding, while being far from more toon-like face embedding
+    * Cosine similarity was used for the distance term.
+
+    <br>
+    <p align="center">
+        <img src = './assets/fig3.png'>
+    </p>
+
+    * After training, we were able to preserve more general face features such as skin and hair color or facial shape.
+    * Detailed feature improvements, such as wrinkles or shadows were also observed for individual cases.
+
+    <br>
+    <p align="center">
+        <img src = './assets/fig4.png'>
+    </p>
+
+
 ## Dependencies
 
 * Check the 'requirements.txt' folder for dependencies
+
 
 ## Executing Program Files
 
@@ -74,6 +128,7 @@
     * outdir: save directory for latent vector. not used.
     * ours_network: the model path for 'toonifying' images. This should denote the path of our final model, as the final output is produced by this model.
 
+
 ## Models: Description
 
 * toonify_original.pkl
@@ -88,3 +143,12 @@
     * One more webtoon-transferred layer blended than the model 'ours_Webtoon.pkl'. Used for sampling negative samples in '2_Train_With_Triplet_Loss.ipynb'.
 * ours_Webtoon_fine-tooned.pkl
     * Final model trained with triplet loss.
+
+
+## References
+
+[1] T. Karras et al. Analyzing and Improving the Image Quality of 
+StyleGAN (2020) \
+[2] J. Pinkney et al. Resolution Dependent GAN Interpolation for 
+Controllable Image Synthesis Between Domains (2020) \
+[3] github.com/bryandlee/naver-webtoon-data
