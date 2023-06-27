@@ -23,7 +23,7 @@
     
     <br>
     <p align="center">
-        <img src = './assets/fig1.png'>
+        <img src = './assets/fig1.png' width='650'>
     </p>
 
 * Experiments in Different Data Domains
@@ -32,7 +32,7 @@
 
     <br>
     <p align="center">
-        <img src = './assets/fig2.png'>
+        <img src = './assets/fig2.png' width='500'>
     </p>
 
 * Fine-Tooning with Triplet loss
@@ -41,7 +41,7 @@
 
     <br>
     <p align="center">
-        <img src = './assets/fig3.png'>
+        <img src = './assets/fig3.png' width='500'>
     </p>
 
     * After training, we were able to preserve more general face features such as skin and hair color or facial shape.
@@ -49,7 +49,7 @@
 
     <br>
     <p align="center">
-        <img src = './assets/fig4.png'>
+        <img src = './assets/fig4.png' width='500'>
     </p>
 
 
