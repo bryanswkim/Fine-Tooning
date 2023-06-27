@@ -152,3 +152,7 @@ StyleGAN (2020) \
 [2] J. Pinkney et al. Resolution Dependent GAN Interpolation for 
 Controllable Image Synthesis Between Domains (2020) \
 [3] github.com/bryandlee/naver-webtoon-data
+
+## Contributors
+[![](https://github.com/archive-cs-minhyuk.png?size=50)](https://github.com/archive-cs-minhyuk)
+[![](https://github.com/lodikim.png?size=50)](https://github.com/lodikim)
