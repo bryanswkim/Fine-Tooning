@@ -1,9 +1,16 @@
 # Fine-Tooning: Realistic Cartoonization of Myself
 
+<h3 align="right">
+    Minhyuk Song*, Sangwoo Kim*
+</h3>
+
 <p align="center">
     <img src = './assets/title.png'>
 </p>
 
+<p align="right">
+    * Equal Contribution
+</p>
 
 ## Related Works
 
