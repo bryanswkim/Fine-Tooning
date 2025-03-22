@@ -162,4 +162,4 @@ Controllable Image Synthesis Between Domains (2020) \
 
 ## Contributors
 [![](https://github.com/archive-cs-minhyuk.png?size=50)](https://github.com/archive-cs-minhyuk)
-[![](https://github.com/lodikim.png?size=50)](https://github.com/lodikim)
+[![](https://github.com/bryanswkim.png?size=50)](https://github.com/bryanswkim)
